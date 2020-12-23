@@ -1,0 +1,41 @@
+.form {
+  display: inline-block;
+  margin: 0 0 10px;
+  padding: 5px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input {
+  display: block;
+  background-color: #dddddd;
+  outline: none;
+  border: none;
+  transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.input:focus {
+  background-color: #c2c2c2;
+}
+
+.example {
+  font-size: 12px;
+}
+
+.button {
+  display: block;
+  background-image: radial-gradient(at center, #cccccc, #ffffff);
+  margin: 0 3px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.button:hover {
+  transform: scale(1.05);
+  background-image: radial-gradient(at center, #a1a1a1, #f0f0f0);
+}
