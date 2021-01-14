@@ -69,7 +69,7 @@ class App extends Component {
   };
 
   render() {
-    const filtered = this.filteredContacts();
+    const filteredContacts = this.filteredContacts();
 
     return (
       <div className={styles.container}>
@@ -77,7 +77,10 @@ class App extends Component {
         <ContactForm onSubmit={this.createNewContact} />
         <h2 className={styles.title}>Contacts</h2>
         <Filter value={this.state.filter} onChange={this.filterInput} />
-        <ContactList contacts={filtered} deleteOnClick={this.deleteContact} />
+        <ContactList
+          contacts={filteredContacts}
+          deleteOnClick={this.deleteContact}
+        />
       </div>
     );
   }
